@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awsome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main CSS File Link -->
+    <link rel="stylesheet" href="Main.css">
+</head>
+<body>
+    <div class="side-links bg-white">
+        <h1 class="logo text-center uppercase c-black">Phanich</h1>
+        <ul class="ul-flex">
+            <li>
+                <a class="a" href="Dashboard.html">
+                    <i class="fa-regular fa-chart-bar c-black"></i>
+                    <span class="capitalies">Dashboard</span>
+                </a>
+            </li>
+            <li class="active">
+                <a class="a" href="Setting.html">
+                    <i class="fa-solid fa-gear c-black"></i>
+                    <span class="capitalies">settings</span>
+                </a>
+            </li>
+            <li>
+                <a class="a" href="Profile.html">
+                    <i class="fa-regular fa-user c-black"></i>
+                    <span class="capitalies">profile</span>
+                </a>
+            </li>
+            <li>
+                <a class="a" href="Projects.html">
+                    <i class="fa-solid fa-diagram-project c-black"></i>
+                    <span class="capitalies">projects</span>
+                </a>
+            </li>
+            <li>
+                <a class="a" href="Courses.html">
+                    <i class="fa-solid fa-graduation-cap c-black"></i>
+                    <span class="capitalies">courses</span>
+                </a>
+            </li>
+            <li>
+                <a class="a" href="Friends.html">
+                    <i class="fa-regular fa-circle-user c-black"></i>
+                    <span class="capitalies">friends</span>
+                </a>
+            </li>
+            <li>
+                <a class="a" href="Files.html">
+                    <i class="fa-regular fa-file c-black"></i>
+                    <span class="capitalies">files</span>
+                </a>
+            </li>
+            <li>
+                <a class="a" href="Plans.html">
+                    <i class="fa-solid fa-credit-card c-black"></i>
+                    <span class="capitalies">plans</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main-container">
+        <div class="header flex-bw">
+            <form action="#" class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Type A Keyword">
+            </form>
+            <div class="account">
+                <div class="notfication">
+                    <i class="fa-regular fa-bell c-black"></i>
+                </div>
+                <a href="Profile.html"><img src="imgs/avatar.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="container bg-container f-column">
+            <h1 class="title">settings</h1>
+            <div class="content-holder">
+                <div class="site-control bg-white r-6 p-10">
+                    <h2 class="s-title">Site Control</h2>
+                    <p class="sub-title">Control The Website If There Is A Maintainace</p>
+                    <div class="toggle">
+                        <div class="war">
+                            <h3>Website Control</h3>
+                            <p>Open\Close The Website And Type The Reason</p>
+                        </div>
+                        <div class="toggle-btn bg-blue">
+                            <i class="fa-solid fa-check icon check c-blue"></i>
+                        </div>
+                    </div>
+                    <textarea placeholder="Close Message Content"></textarea>
+                </div>
+                <div class="general-info bg-white r-6 p-10">
+                    <h2 class="s-title">General Info</h2>
+                    <p class="sub-title">General Information About Your Account</p>
+                    <div class="form">
+                        <label for="F-Name">First Name</label>
+                        <input type="text" name="F-Name" placeholder="First Name">
+                        <label for="L-Name">Last Name</label>
+                        <input type="text" name="L-Name" placeholder="Last Name"> 
+                        <div class="email">
+                            <label for="email">Email</label>
+                            <div class="ei">
+                                <input type="email" name="email" placeholder="a@gmail.com">
+                                <a href="#">Change</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="security-info bg-white r-6 p-10">
+                    <h2 class="s-title">Security Info</h2>
+                    <p class="sub-title">Security Information About Your Account</p>
+                    <div class="info">
+                        <div class="text">
+                            <h3>Password</h3>
+                            <p>Last Change On 25/5/2222</p>
+                        </div>
+                        <span class="btn bg-blue c-white">Change</span>
+                    </div>
+                    <div class="info">
+                        <div class="text">
+                            <h3>Two Factor Authontication</h3>
+                            <p>Last Change On 25/5/2222</p>
+                        </div>
+                        <div class="toggle-btn bg-blue">
+                            <i class="fa-solid fa-check icon check c-blue"></i>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="text">
+                            <h3>Devices</h3>
+                            <p>Last Change On 25/5/2222</p>
+                        </div>
+                        <span class="btn bg-eee">Device</span>
+                    </div>
+                </div>
+                <div class="social-info bg-white r-6 p-10">
+                    <h2 class="s-title">Social Info</h2>
+                    <p class="sub-title">Social Media Information</p>
+                    <div class="media">
+                        <div class="item">
+                            <input type="text" placeholder="Type Your User Name">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="item">
+                            <input type="text" placeholder="Type Your User Name">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            
+                        </div>
+                        <div class="item">
+                            <input type="text" placeholder="Type Your User Name">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div class="item">
+                            <input type="text" placeholder="Type Your User Name">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        
+                        
+                        
+                        
+                    </div>
+                </div>
+                <div class="wigets-control bg-white r-6 p-10">
+                    <h2 class="s-title">Wigets Control</h2>
+                    <p class="sub-title">Show/Hide Wigets</p>
+                    <div class="toggle">
+                        <input type="checkbox" id="one">
+                        <label for="one">Quick Draft</label>
+                    </div>
+                    <div class="toggle">
+                        <input type="checkbox" id="two">
+                        <label for="two">Quick Draft</label>
+                    </div>
+                    <div class="toggle">
+                        <input type="checkbox" id="three">
+                        <label for="three">Quick Draft</label>
+                    </div>
+                    <div class="toggle">
+                        <input type="checkbox" id="four">
+                        <label for="four">Quick Draft</label>
+                    </div>
+                    <div class="toggle">
+                        <input type="checkbox" id="five">
+                        <label for="five">Quick Draft</label>
+                    </div>
+                    <div class="toggle">
+                        <input type="checkbox" id="six">
+                        <label for="six">Quick Draft</label>
+                    </div>
+                </div>
+                <div class="backup-maneger bg-white r-6 p-10">
+                    <h2 class="s-title">Backup Maneger</h2>
+                    <p class="sub-title">Control Backup Time And Location</p>
+
+                    <form action="#">
+                        <div class="item">
+                            <input type="radio" id="Daily">
+                            <label for="Daily">Daily</label>
+                        </div>
+                        <div class="item">
+                            <input type="radio" id="weekly">
+                            <label for="weekly">weekly</label>
+                        </div>
+                        <div class="item">
+                            <input type="radio" id="Yearly">
+                            <label for="Yearly">Yearly</label>
+                        </div>
+                        <div class="item">
+                            <button type="submit">
+                                <i class="fa-solid fa-database"></i>
+                                <p>megaman</p>
+                            </button>
+                            <button type="submit">
+                                <i class="fa-solid fa-database"></i>
+                                <p>Zero</p>
+                            </button>
+                            <button type="submit">
+                                <i class="fa-solid fa-database"></i>
+                                <p>Sigma</p>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
