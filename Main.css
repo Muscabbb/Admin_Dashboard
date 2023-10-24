@@ -123,7 +123,10 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+p{
+    text-wrap: wrap;
+    color: var(--text);
+}
 .flex-bw{
     display: flex;
     justify-content: space-between;
@@ -190,6 +193,7 @@ body{
     border-radius: 5px;
     width: fit-content;
     text-transform: capitalize;
+    cursor: pointer;
 }
 .toggle-btn{
     width: 70px;
@@ -1161,9 +1165,7 @@ table td img:not(:first-child){
 .form input:focus{
     outline: none;
 }
-.form .email{
-    
-}
+
 @media (max-width:767px){
     .form .email{
         flex-direction: column;
@@ -1632,3 +1634,385 @@ table td img:not(:first-child){
 
 /** ------------------------------------Courses Page--------------- */
 /** ------------------------------------Courses Page--------------- */
+
+
+/** ------------------------------------Friends Page--------------- */
+.friend{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.friend::before,
+.friend::after{
+    position: absolute;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 800;
+    padding: 10px;
+    border-radius: 50%;
+    background: var(--eee);
+    color: var(--text);
+    top: 10px;
+    cursor: pointer;
+}
+.friend::before{
+    content: "\f095";
+}
+.friend::after{
+    content: "\f0e0";
+    left: 50px;
+}
+
+.friend .friend-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.friend .friend-info img{
+    width: 100px;
+    border-radius: 50%;
+}
+.friend .friend-info .f-name{
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.8em;
+}
+.friend .friend-info p{
+    font-size: 1.3em;
+}
+
+.friend .fr-dt{
+    border: 1px solid;
+    border-color: var(--eee) transparent var(--eee) transparent;
+}
+.friend .fr-dt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.vip{
+    text-transform: uppercase;
+    font-size: 5em;
+    letter-spacing: 1.3px;
+    color: var(--danger);
+    opacity: .3;
+}
+.friend .fr-dt .j{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.friend .fr-dt .j p{
+    margin-left: 30px;
+    position: relative;
+    color: var(--black);
+}
+.friend .fr-dt .j p::before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 800;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+}
+.friend .fr-dt .j p:first-of-type::before{
+    content: "\f118";
+
+}
+.friend .fr-dt .j p:nth-of-type(2)::before{
+    content: "\f542";
+
+}
+.friend .fr-dt .j p:last-of-type::before{
+    content: "\f1ea";
+
+}
+
+.friend .decision{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.friend .decision .buttons{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+/** ------------------------------------Friends Page--------------- */
+
+/** ------------------------------------Files Page--------------- */
+.file-holder{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+@media(max-width:767px){
+    .file-holder{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+
+
+.file-holder .files{
+    flex-basis: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+    gap: 10px;
+}
+@media(max-width:767px){
+    .file-holder .files{
+        width: 100%;
+    }
+}
+.files .file{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.files .file i{
+    align-self: flex-start;
+    cursor: pointer;
+}
+.files .file i:hover{
+    color: var(--blue);
+}
+.files .file img{
+    width: 100px;
+    transition: var(--main-transition);
+}
+.files .file:hover img{
+    transform: rotate(6deg);
+}
+
+
+.files .file p{
+    color: var(--black);
+}
+.files .file > .file-name{ 
+    align-self: flex-start;
+    color: var(--text);
+}
+.files .file .info{
+    width: 100%;
+    display: flex;
+    padding-top: 15px;
+    border: 1px solid;
+    border-color: var(--eee) transparent transparent;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text);
+}
+
+
+
+
+
+
+.file-holder .file-statistics{
+    flex-basis: 35%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+@media(max-width:767px){
+    .file-holder .file-statistics{
+        width: 100%;
+        order: -1;
+    }
+}
+.file-statistics .s-title{
+    text-transform: capitalize;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.file-statistics .all-files{
+    display: flex;
+    gap: 10px;
+    border: 1px solid var(--eee);
+}
+.file-statistics .all-files .img{
+    position: relative;
+    width: 50px ;
+    background: #0075ff2b;
+}
+.file-statistics .all-files .img::before{
+    font-family: "Font Awesome 6 Free";
+    content: "\f1c1";
+    position: absolute;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: var(--blue);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.all-files .details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.all-files .details .fd {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.all-files .details .fd .file-name{
+    
+} 
+
+.all-files .details .fd .total-count{
+    
+}
+.all-files .details .size{
+    align-self: flex-end;
+}
+
+.all-files .button{
+    align-self: center;
+    margin-top: 10px;
+}
+.all-files .button:hover i{
+    
+}
+
+
+.file-statistics .btn{
+    align-self: center;
+    width: 120px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.file-statistics .btn:hover i{
+    animation: bouncer 1s linear infinite;
+}
+
+@keyframes bouncer{
+    0%,100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+}
+/** ------------------------------------Files Page--------------- */
+
+
+/** ------------------------------------Plans Page--------------- */
+.plans-holder{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+    gap: 10px;
+}
+@media (max-width:767px){
+    .plans-holder{
+        grid-template-columns: repeat(auto-fill,minmax(100%,1fr));
+    }
+}
+
+.plan .plan-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    position: relative;
+}
+.plan .plan-header::before{
+    content: "";
+    position: absolute;
+    width: 99%;
+    height: 95%;
+}
+.plan:first-of-type .plan-header{
+    border: 2px solid var(--green);
+}
+.plan:first-of-type .plan-header::before{
+    background: var(--green);
+}
+
+.plan:nth-of-type(2) .plan-header{
+    border: 2px solid var(--blue);
+}
+.plan:nth-of-type(2) .plan-header::before{
+    background: var(--blue);
+}
+
+.plan:last-of-type .plan-header{
+    border: 2px solid var(--orange);
+}
+.plan:last-of-type .plan-header::before{
+    background: var(--orange);
+}
+
+
+.plan .plan-header h3,
+.plan .plan-header p{
+    color: var(--white);
+    position: relative;
+}
+.plan .plan-header p{
+    font-size: 2em;
+}
+.plan .plan-header p::before{
+    content: "$";
+    position: absolute;
+    top: -15px;
+    left: -20px;
+}
+
+.plan ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.plan ul li{
+    display: flex;
+    align-items: center;
+    gap: 15px;  
+    border-bottom: 1px solid var(--eee);
+    padding-bottom: 10px;
+}
+
+.plan ul li .fa-check{
+    color: var(--green);
+}
+.plan ul li .fa-xmark{
+    color: var(--danger);
+}
+.plan ul li i:last-of-type{
+    margin-left: auto;
+    cursor: pointer;
+    color: var(--text);
+}
+
+.plan > .dealed{
+    width: 100%;
+    text-align: center;
+    color: var(--text);
+}
+/** ------------------------------------Plans Page--------------- */
+
